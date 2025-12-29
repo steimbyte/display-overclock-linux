@@ -91,16 +91,3 @@ graph TD
     I915 --> MUT
     MUT --> SET
 ```
-
-## Teil VII: Quellen & Tools
-- **edid-decode**: Tool zur Validierung von EDID-Strukturen.
-- **Limine**: Modern Bootloader (Codeberg).
-- **CachyOS Wiki**: Bootloader & Kernel Configuration.
-
-## 🟢 Finale Prüfung (Phase 7)
-| Prüfungspunkt | Status |
-| :--- | :--- |
-| Ordnerstruktur | ✅ Vollständig |
-| Beweisführung | ✅ Foto-Beweis der 90Hz Option vorhanden |
-| Pfad-Dokumentation | ✅ Alle lokalen Pfade (/etc/kernel/cmdline, etc.) korrekt |
-| TTA-Integrität | ✅ Berechnungen verifiziert |
