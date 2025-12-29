@@ -47,16 +47,12 @@ Bei Systemen wie den ThinkPads (Tx30) ist oft ein Coreboot-Mod notwendig, um LVD
 Der Pixeltakt ist die kritische Grenze. Durch **CVT-RBv2** (Reduced Blanking) wird das horizontale Blanking minimiert, was den Takt pro Herz senkt.
 - **Formel**: `2104 (H-Total) * 1116 (V-Total) * 90 (Hz) ≈ 211,32 MHz`.
 
-### 2. Bandbreiten-Tabelle
-![Bandbreiten-Analyse](gen_images/bandwidth_table.png)
-
 ## Teil IV: Erlerntes & "Lessons Learned" (CachyOS Spezial)
 
 | Problem | Ursache | Lösung |
 | :--- | :--- | :--- |
 | **err=-2 (File not found)** | Treiber lädt vor dem Mounten der Root-Partition. | EDID in `mkinitcpio.conf` unter `FILES` eintragen und Image neu bauen. |
 | **Modus nicht wählbar** | Intel-Treiber "Pruning" (Filterung). | `drm.edid_firmware` nutzen, um den Treiber zur Akzeptanz zu zwingen. |
-| **Boot-Order-Reset** | HP-Firmware priorisiert Windows. | `efibootmgr -o` nutzen und ggf. Custom Boot Path im BIOS setzen. |
 | **Konfiguration überschrieben** | `limine-entry-tool` generiert Config neu. | Änderungen in `/etc/kernel/cmdline` statt direkt in `/boot/limine.conf`. |
 
 ## Teil V: Risiken & Verifizierung
