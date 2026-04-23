@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/steimerbyte)
+
 # Display Overclocking: 90Hz Linux Deep-Tech Analyse
 
 | Feld | Inhalt |
